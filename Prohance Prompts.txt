@@ -1,0 +1,21 @@
+how many rows are there in the given data ? 
+
+which employee is consistently working on ProHance under the column ActivityName and give the number of times ProHance occur's under the column ActivityName.
+
+how many columns are there in the given data and give me a list of them.
+
+how many rows are there in the given  data? 
+
+how many unique employees are there in the given data? 
+
+which employees are consistently working on ProHance under the column ActivityName and give the number of times ProHance occur's under the column ActivityName give me the list of them. 
+
+
+
+
+
+
+
+
+
+

@@ -20,7 +20,7 @@ def chat_with_csv(df,prompt):
 
 st.set_page_config(layout='wide')
 
-st.title("ChatCSV powered by LLM")
+st.title("Database Chatbot powered by StringScraper ")
 
 input_csv = st.file_uploader("Upload your CSV file", type=['csv'])
 
@@ -44,4 +44,13 @@ if input_csv is not None:
                     st.info("Your Query: "+input_text)
                     result = chat_with_csv(data, input_text)
                     st.success(result)
+                    export_content = f"Input Text: {input_text}\n\nChat Result: {result}"
+                    download_button = st.download_button(
+                    label="Export chat",
+                    data=export_content.encode("utf-8"),
+                    file_name="chat_export.txt",
+                    mime="text/plain"
+                )
 
+                    if download_button:
+                        st.success(f"Chat exported to chat_export.txt")
